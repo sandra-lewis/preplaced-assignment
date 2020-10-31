@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 import Integration from './Integration';
-import PropTypes from 'prop-types';
 
 const Favourites = ({ favItems }) => {
   return (
@@ -23,10 +22,6 @@ const Favourites = ({ favItems }) => {
       )}
     </Fragment>
   );
-};
-
-Favourites.propTypes = {
-  favItems: PropTypes.array.isRequired,
 };
 
 export default Favourites;
