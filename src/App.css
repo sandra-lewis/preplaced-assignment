@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* Global Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #efefef;
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  color: #000;
+}
+
+a:hover {
+  color: #009edb;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+/* Navbar */
+
+nav {
+  width: 230px;
+}
+
+nav a,
+nav a:hover {
+  padding-top: 1.5rem;
+  display: block;
+  border-bottom: 2px solid #efefef;
+}
+
+nav h6 {
+  color: #000;
+}
+
+nav i {
+  margin: 0 0.85rem;
+  color: #ccc;
+}
+
+.nav-links {
+  color: #aaa;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.dropdown {
+  margin-left: 1rem;
+}
+
+/* Category and Filter */
+select {
+  border: none;
+  background-color: transparent;
+}
+
+.search-bar {
+  font-family: FontAwesome, 'Lato';
+  background-color: aliceblue;
+  border: none;
+}
+
+.flex-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-titles {
+  display: flex;
+}
+
+/* Active Nav Link */
+
+.active {
+  border-right: 4px solid #009edb;
+  color: #009edb;
+}
+
+.active:hover {
+  background-color: #f6f6f6;
+}
+
+.lightblue,
+.active h6,
+.active i {
+  color: #009edb;
+}
+
+.lightgrey {
+  color: #aaa;
+}
+
+.card {
+  min-width: 20vw;
+}
+
+.card-body {
+  box-shadow: 0 0 7px #ccc;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+/* Company Logos */
+.logo {
+  display: block;
+  margin: 1.5rem auto 2.5rem;
+  width: 80px;
+  height: 70px;
+}
+
+/* For Tablets*/
+
+@media (max-width: 1096px) {
+  nav {
+    width: max-content;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: row;
+    margin: 3rem;
+  }
+
+  .flex-header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .active {
+    border-right: none;
+    border-bottom: 4px solid #009edb;
+  }
+}
+
+/* For Phones */
+
+@media (max-width: 668px) {
+  nav {
+    width: 300px;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .active {
+    border-right: 4px solid #009edb;
+    border-bottom: 2px solid #efefef;
+  }
+}
+
+/* For Smaller Phones*/
+
+@media (max-width: 364px) {
+  .flex-titles {
+    flex-direction: column;
+  }
+
+  .dropdown {
+    margin: 1rem 0 0;
+  }
+}
